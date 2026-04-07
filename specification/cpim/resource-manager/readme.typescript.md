@@ -3,11 +3,10 @@
 These settings apply only when `--typescript` is specified on the command line.
 Please also specify `--typescript-sdks-folder=<path to root folder of your azure-sdk-for-js clone>`.
 
-```yaml $(typescript)
+``` yaml $(typescript)
 typescript:
   azure-arm: true
-  package-name: "cpim"
-  output-folder: "$(typescript-sdks-folder)/packages/cpim"
-  payload-flattening-threshold: 1
+  package-name: "@azure/arm-azureadexternalidentities"
+  output-folder: "$(typescript-sdks-folder)/sdk/azureadexternalidentities/arm-azureadexternalidentities"
   generate-metadata: true
 ```
